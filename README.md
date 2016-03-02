@@ -12,10 +12,11 @@ gulp bpjs:dev
 ```
 
 # Use
-Execute `npm install --save-dev gulp boilerplate-gulp-js`, then modify your `Gulpfile.js` like so (or create one):
+Requires Gulp 4.0. Execute `npm install --save-dev gulp boilerplate-gulp-js`, then modify your `Gulpfile.js` like so (or create one):
 
 ```javascript
 var gulp = require('gulp'),
+  path= require('path'),
   bpjs = require('boilerplate-gulp-js');
 
 bpjs(gulp, {
@@ -29,7 +30,7 @@ bpjs(gulp, {
   sources: path.join(__dirname, 'src/**/*.js'),
 
   // The tests for your project
-  tests: path.join(__dirname, 'src/**/*Spec.js')
+  tests: path.join(__dirname, 'src/**/*Spec.js'),
 
   // The destination to write the built files
   dest: path.join(__dirname, 'build')
