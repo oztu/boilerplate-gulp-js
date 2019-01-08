@@ -11,6 +11,8 @@ module.exports = {
   // Define globals exposed by Node.js.
   node: true,
 
+  // Define global ECMAScript version
+  esversion: 6,
 
   /*
    * ENFORCING OPTIONS
